@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grey+Qo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grey+Qo&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 10%;
+    border-bottom: 2px solid rgb(128, 128, 128, 0.1);
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: relative;
+}
+
+.nav-center{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 160px;
+    /* position: relative; */
+   
+
+    & h4{
+        font-size: 30px ;
+        text-transform: uppercase;
+
+        & span{
+            color: red;
+        }
+    }
+}
+
+.nav-links{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+
+    & span{
+        color: red;
+    }
+}
+
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.container{
+    width: 800px;
+    height: 200px;
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flexe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & h2{
+        font-size: 50px;
+        font-family: "New Amsterdam", sans-serif;
+    }
+
+    & span{
+        padding: 0px 10px;
+        font-size: 35px;
+        font-family: "Grey Qo", cursive;
+    }
+}
+
+button{
+    padding: 5px 10px;
+    font-size: 19px;
+    font-weight: bold;
+    border: none;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 10px;
+    transition:all;
+    transition-duration: 0.2s;
+}
+
+button:hover{
+    transform: translateY(8px);
+}
+
+
+@media (max-width : 460px) {
+    nav{
+        width: 100%;
+        height: 10%;
+        border-bottom: 2px solid rgb(128, 128, 128, 0.1);
+        position: sticky;
+        top: 0;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        position: relative;
+    }
+    
+    .nav-center{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 15px;
+        /* position: relative; */
+       
+    
+        & h4{
+            font-size: 20px ;
+            text-transform: uppercase;
+    
+            & span{
+                color: red;
+            }
+        }
+    }
+    
+    .nav-links{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+    
+    .nav-links a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    
+        & span{
+            color: red;
+        }
+    }
+    
+    
+    main{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    
+    .container{
+        width: 90%;
+        height: 200px;
+        background: rgba( 255, 255, 255, 0.5 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .flexe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        & h2{
+            font-size: 25px;
+            font-family: "New Amsterdam", sans-serif;
+        }
+    
+        & span{
+            padding: 0px 10px;
+            font-size: 15px;
+            font-family: "Grey Qo", cursive;
+        }
+    }
+    
+    button{
+        padding: 5px 10px;
+        font-size: 19px;
+        font-weight: bold;
+        border: none;
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        border-radius: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        margin-top: 10px;
+        transition:all;
+        transition-duration: 0.2s;
+    }
+    
+    button:hover{
+        transform: translateY(8px);
+    }
+    
+    
+}
